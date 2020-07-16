@@ -19,10 +19,10 @@ class smallCard extends HTMLElement {
         this.innerHTML = `
             <div class="small-card">
                 <span class="text-activity">${textActivity}</span>
-                <img src="../../src/images/icon-${socialIcon}.svg" alt="icono ${socialIcon}" >
+                <img src=".../social_media_dashboard/src/images/icon-${socialIcon}.svg" alt="icono ${socialIcon}" >
                 <div class="number">${number}</div>
                 <div class="date ${colorUpDown}">
-                    <img src="../../src/images/icon-${iconUpDown}.svg" alt="icono ${iconUpDown}" >
+                    <img src=".../social_media_dashboard/src/images/icon-${iconUpDown}.svg" alt="icono ${iconUpDown}" >
                     <span>${numberUpDown}%</span>
                 </div>
             </div>

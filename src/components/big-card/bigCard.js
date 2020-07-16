@@ -14,7 +14,7 @@ class bigCard extends HTMLElement {
         var colorUpDown;
 
         if (iconUpDown == "down") {
-            colorUpDown = "red" 
+            colorUpDown = "red"
         }
 
         this.innerHTML = `
@@ -27,12 +27,12 @@ class bigCard extends HTMLElement {
                 <div class="number">${number}</div>
                 <span class="followers">${followers}</span>
                 <div class="date-today ${colorUpDown}">
-                    <img src="../../src/images/icon-${iconUpDown}.svg" alt="icono ${iconUpDown}" >
+                    <img src=".../social_media_dashboard/src/images/icon-${iconUpDown}.svg" alt="icono ${iconUpDown}" >
                     <span>${numberUpDown}</span>
                     <span>Today</span>
                 </div>
             </div>
-        `;   
+        `;
     }
 }
 
