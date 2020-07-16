@@ -1,0 +1,51 @@
+.small-card {
+    height: 125px;
+    width: 255px;
+    border-radius: 4px;
+    background-color: $Light-Grayish-Blue;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 25px;
+    box-sizing: border-box;
+    transition: all .3s;
+    &:hover{
+        background-color: $Card-Hover;
+        cursor: pointer;
+    }
+    
+    & .text-activity {
+        color: $Dar-Grayish-Blue;
+        font-size: 14px;
+        font-weight: 700; 
+        align-self: start;
+    }
+    & img{
+        justify-self: end;
+    }
+
+    & .number {
+        font-size: 32px;
+        font-weight: $Weight-Bold;
+        color: $Very-Dark-Blue;
+        line-height: 1;
+        align-self: end;
+    }
+
+    & .date {
+        font-size: 12px;
+        font-weight: 700;
+        color: $Lime-Green;
+        align-self: end;
+        justify-self: end;
+        &.red {
+            color: $Brigh-Red;
+        }
+    }
+}
+
+@media (max-width: 525px) {
+    .small-card { 
+        width: 310px; 
+        transition: all .3s;
+    }
+  } 

@@ -1,0 +1,80 @@
+.big-card {
+    position: relative;
+    height: 215px;
+    width: 255px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    background-color: $Light-Grayish-Blue;
+    box-sizing: border-box;
+    overflow: hidden;
+    transition: all .3s;
+    &:hover{
+        background-color: $Card-Hover;
+        cursor: pointer;
+    }
+
+    & .border-top {
+        height: 4px;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        &.facebook{
+            background: $Facebook;
+        }
+        &.instagram{
+            background: $Instagram;
+        }
+        &.youtube{
+            background: $YouTube;
+        }
+        &.twitter{
+            background: $Twitter;
+        }
+    }
+
+    & .social {
+        height: 78px;
+        display: flex;
+        align-items:center;
+        & span{
+            color: $Dar-Grayish-Blue;
+            font-size: 12px;
+            font-weight: 600 ;
+            margin-left: 10px;
+        }
+    }
+    
+    & .number {
+        height: 58px;
+        font-size: 55px;
+        font-weight: $Weight-Bold;
+        color: $Very-Dark-Blue;
+        line-height: 1;
+    }
+    & .followers {
+        height: 42px;
+        font-size: 12px;
+        font-weight: $Weight-Normal;
+        color: $Dar-Grayish-Blue;
+        letter-spacing: 5.4px;
+    }
+    & .date-today {
+        height: 42px;
+        font-size: 12px;
+        font-weight: 600 ;
+        color: $Lime-Green;
+        &.red{
+            color: $Brigh-Red;
+        }
+    }
+    
+}
+
+@media (max-width: 525px) {
+    .big-card { 
+        width: 310px; 
+    }
+  } 

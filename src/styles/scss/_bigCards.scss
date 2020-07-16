@@ -1,0 +1,19 @@
+.big-cards{
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+
+  justify-content: center;
+}
+@media (min-width: 1068px) {
+    .big-cards { grid-template-columns: repeat(4, 255px); }
+  }
+@media (max-width: 1067px) {
+    .big-cards { grid-template-columns: repeat(3, 255px); }
+  }
+@media (max-width: 800px) {
+    .big-cards { grid-template-columns: repeat(2, 255px); }
+  }
+@media (max-width: 525px) {
+    .big-cards { grid-template-columns: repeat(1, 310px); }
+  } 

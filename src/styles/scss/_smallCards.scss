@@ -1,0 +1,29 @@
+.small-cards {
+    max-width: 1070px;
+    margin: 45px auto;
+    & h2{
+        color:$Dar-Grayish-Blue;
+    }
+}
+
+.cards-container{
+    margin: 25px auto;
+    display: grid;
+    grid-gap: 1rem;
+    justify-content: center;
+}
+
+
+@media (min-width: 1068px) {
+    .cards-container { grid-template-columns: repeat(4, 255px); }
+  }
+@media (max-width: 1067px) {
+    .cards-container { grid-template-columns: repeat(3, 255px); }
+  }
+@media (max-width: 800px) {
+    .cards-container { grid-template-columns: repeat(2, 255px); }
+  }
+@media (max-width: 525px) {
+    .cards-container { grid-template-columns: repeat(1, 310px); }
+  } 
+
