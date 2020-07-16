@@ -21,7 +21,7 @@ class bigCard extends HTMLElement {
             <div class="big-card">
                 <div class="border-top ${socialIcon}"></div>
                 <div class="social">
-                    <img src="../../src/images/icon-${socialIcon}.svg" alt="icono ${socialIcon}" >
+                    <img src="../social_media_dashboard/src/images/icon-${socialIcon}.svg" alt="icono ${socialIcon}" >
                     <span>@${profile}</span>
                 </div>
                 <div class="number">${number}</div>
