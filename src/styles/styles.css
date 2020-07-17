@@ -88,6 +88,7 @@ header h3 {
   display: inline-block;
   width: 48px;
   height: 24px;
+  transform: rotate(180deg);
 }
 .switch .slider {
   position: absolute;
@@ -96,7 +97,7 @@ header h3 {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(to right, #378fe6, #3eda82);
+  background: #aeb3cb;
   transition: 0.4s;
 }
 .switch .slider:before {
@@ -121,7 +122,7 @@ header h3 {
   height: 0;
 }
 .switch input:checked + .slider {
-  background: #aeb3cb;
+  background: linear-gradient(to right, #378fe6, #3eda82);
   transition: 0.4s;
 }
 .switch input:checked + .slider:hover {

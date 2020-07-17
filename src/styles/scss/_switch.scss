@@ -5,6 +5,7 @@ $input-check: true;
     display: inline-block;
     width: 48px;
     height: 24px;
+    transform:rotate(180deg);
     & .slider {
         position: absolute;
         cursor: pointer;
@@ -12,7 +13,7 @@ $input-check: true;
         left: 0;
         right: 0;
         bottom: 0;
-        background: $Toggle-active;
+        background: $Toggle;
         transition: 0.4s;
         &:before {
             position: absolute;
@@ -45,7 +46,7 @@ $input-check: true;
 
     }
     & input:checked + .slider {
-        background: $Toggle;
+        background: $Toggle-active;
         transition: 0.4s;
         &:hover{
             background: $Toggle-active;
