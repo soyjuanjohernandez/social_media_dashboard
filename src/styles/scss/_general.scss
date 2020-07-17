@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lato&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lato&display=swap");
 
 //Colors
 
@@ -20,16 +20,15 @@ $Toggle-active: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%)
 
 $Toggle: hsl(230, 22%, 74%);
 
-
 // Typography
- 
+
 // Body Copy
 
 $Font-size: 14px; //(Overview Card Headings)
 
 // Font
 
-$Font-Family-Inter: 'Inter'; //[Inter]
+$Font-Family-Inter: "Inter"; //[Inter]
 $Weight-Normal: 400;
 $Weight-Bold: 700;
 
@@ -37,13 +36,19 @@ $Weight-Bold: 700;
     font-family: $Font-Family-Inter;
     margin: 0;
     padding: 0;
-   
 }
-body{
+body {
     background-color: var(--bg);
 }
 main {
     margin: 0 auto;
-    padding:  0 20px;
+    padding: 0 20px;
 }
 
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
