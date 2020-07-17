@@ -7,12 +7,12 @@
     align-items: center;
     justify-content: center;
     border-radius: 4px;
-    background-color: $Light-Grayish-Blue;
+    background-color: var(--card-bg);
     box-sizing: border-box;
     overflow: hidden;
     transition: all .3s;
     &:hover{
-        background-color: $Card-Hover;
+        background-color: var(--card-bg-hover);
         cursor: pointer;
     }
 
@@ -40,7 +40,7 @@
         display: flex;
         align-items:center;
         & span{
-            color: $Dar-Grayish-Blue;
+            color: var(--text-general);
             font-size: 12px;
             font-weight: 600 ;
             margin-left: 10px;
@@ -51,14 +51,14 @@
         height: 58px;
         font-size: 55px;
         font-weight: $Weight-Bold;
-        color: $Very-Dark-Blue;
+        color: var(--text-title);
         line-height: 1;
     }
     & .followers {
         height: 42px;
         font-size: 12px;
         font-weight: $Weight-Normal;
-        color: $Dar-Grayish-Blue;
+        color: var(--text-general);
         letter-spacing: 5.4px;
     }
     & .date-today {

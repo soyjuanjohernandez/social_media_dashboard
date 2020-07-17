@@ -1,0 +1,23 @@
+// Light Theme
+
+html{
+
+    --bg:hsl(0, 0%, 100%);
+    --top-bg:hsl(228, 100%, 98%);
+    --card-bg:rgb(240, 242, 250);
+    --card-bg-hover:#E1E3F0;
+    --text-general: hsl(228, 12%, 44%);
+    --text-title:hsl(230, 17%, 14%);
+}
+
+//Dark theme
+
+html[data-theme='dark'] {
+    --bg:hsl(230, 17%, 14%); 
+    --top-bg:hsl(232, 19%, 15%);
+    --card-bg:hsl(228, 28%, 20%);
+    --card-bg-hover:#333A56;
+    --text-general:hsl(228, 34%, 66%);
+    --text-title:hsl(0, 0%, 100%);
+    
+ }

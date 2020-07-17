@@ -21,7 +21,7 @@ $input-check: true;
             width: 18px;
             left: 3px;
             bottom: 3px;
-            background-color: $Dark-Desaturated-Blue;
+            background-color:var(--card-bg);
             transition: 0.4s;
             
         }
@@ -55,6 +55,6 @@ $input-check: true;
     & input:checked + .slider:before {
         transform: translateX(24px);
         transition: 0.4s;
-        background-color: $White;
+        background-color: white;
     }
 }

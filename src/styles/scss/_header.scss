@@ -9,11 +9,11 @@ header {
     & h1 {
         margin: initial;
         padding: initial;
-        color: $Very-Dark-Blue;
+        color: var(--text-title);
     }
     & h3 {
         font-size: 14px;
-        color: $Dar-Grayish-Blue;
+        color: var(--text-general);
         font-weight: 700;
         display: inline;
     }
@@ -24,7 +24,7 @@ header {
     top: 0;
     width: 100%;
     height: 250px;
-    background-color: $Very-Pale-Blue;
+    background-color: var(--top-bg);
     z-index: -1;
     border-radius: 0 0 20px 20px;
 }
@@ -35,7 +35,7 @@ header {
         align-items: flex-start;
         & .header-title{
             width: 100%;
-            border-bottom: 1px solid $Dar-Grayish-Blue ;
+            border-bottom: 1px solid var(--text-general) ;
             padding-bottom: 20px;
             margin-bottom: 20px;
             & h1{

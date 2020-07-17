@@ -1,8 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lato&display=swap");
+html {
+  --bg:hsl(0, 0%, 100%);
+  --top-bg:hsl(228, 100%, 98%);
+  --card-bg:rgb(240, 242, 250);
+  --card-bg-hover:#E1E3F0;
+  --text-general: hsl(228, 12%, 44%);
+  --text-title:hsl(230, 17%, 14%);
+}
+
+html[data-theme=dark] {
+  --bg:hsl(230, 17%, 14%);
+  --top-bg:hsl(232, 19%, 15%);
+  --card-bg:hsl(228, 28%, 20%);
+  --card-bg-hover:#333A56;
+  --text-general:hsl(228, 34%, 66%);
+  --text-title:hsl(0, 0%, 100%);
+}
+
 * {
   font-family: "Inter";
   margin: 0;
   padding: 0;
+}
+
+body {
+  background-color: var(--bg);
 }
 
 main {
@@ -21,11 +43,11 @@ header {
 header h1 {
   margin: initial;
   padding: initial;
-  color: #1e202a;
+  color: var(--text-title);
 }
 header h3 {
   font-size: 14px;
-  color: #63687e;
+  color: var(--text-general);
   font-weight: 700;
   display: inline;
 }
@@ -35,7 +57,7 @@ header h3 {
   top: 0;
   width: 100%;
   height: 250px;
-  background-color: #f5f7ff;
+  background-color: var(--top-bg);
   z-index: -1;
   border-radius: 0 0 20px 20px;
 }
@@ -47,7 +69,7 @@ header h3 {
   }
   header .header-title {
     width: 100%;
-    border-bottom: 1px solid #63687e;
+    border-bottom: 1px solid var(--text-general);
     padding-bottom: 20px;
     margin-bottom: 20px;
   }
@@ -84,7 +106,7 @@ header h3 {
   width: 18px;
   left: 3px;
   bottom: 3px;
-  background-color: #252a41;
+  background-color: var(--card-bg);
   transition: 0.4s;
 }
 .switch .slider.round {
@@ -148,13 +170,13 @@ header h3 {
   align-items: center;
   justify-content: center;
   border-radius: 4px;
-  background-color: #f0f2fa;
+  background-color: var(--card-bg);
   box-sizing: border-box;
   overflow: hidden;
   transition: all 0.3s;
 }
 .big-card:hover {
-  background-color: #E1E3F0;
+  background-color: var(--card-bg-hover);
   cursor: pointer;
 }
 .big-card .border-top {
@@ -181,7 +203,7 @@ header h3 {
   align-items: center;
 }
 .big-card .social span {
-  color: #63687e;
+  color: var(--text-general);
   font-size: 12px;
   font-weight: 600;
   margin-left: 10px;
@@ -190,14 +212,14 @@ header h3 {
   height: 58px;
   font-size: 55px;
   font-weight: 700;
-  color: #1e202a;
+  color: var(--text-title);
   line-height: 1;
 }
 .big-card .followers {
   height: 42px;
   font-size: 12px;
   font-weight: 400;
-  color: #63687e;
+  color: var(--text-general);
   letter-spacing: 5.4px;
 }
 .big-card .date-today {
@@ -220,7 +242,7 @@ header h3 {
   margin: 45px auto;
 }
 .small-cards h2 {
-  color: #63687e;
+  color: var(--text-general);
 }
 
 .cards-container {
@@ -254,7 +276,7 @@ header h3 {
   height: 125px;
   width: 255px;
   border-radius: 4px;
-  background-color: #f0f2fa;
+  background-color: var(--card-bg);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding: 25px;
@@ -262,11 +284,11 @@ header h3 {
   transition: all 0.3s;
 }
 .small-card:hover {
-  background-color: #E1E3F0;
+  background-color: var(--card-bg-hover);
   cursor: pointer;
 }
 .small-card .text-activity {
-  color: #63687e;
+  color: var(--text-general);
   font-size: 14px;
   font-weight: 700;
   align-self: start;
@@ -277,7 +299,7 @@ header h3 {
 .small-card .number {
   font-size: 32px;
   font-weight: 700;
-  color: #1e202a;
+  color: var(--text-title);
   line-height: 1;
   align-self: end;
 }
